@@ -279,21 +279,13 @@ objective_metric_name='validation:error'
 
  使用 Auto Scaling API 的 register_scalable_target API 方法以及 ResourceId 对应的预先计算的 resource_name。
 
-完整格式请参考以下截图： 
-
- ![img](https://raw.githubusercontent.com/liangyimingcom/storage/master/PicGo/clip_image012.jpg) 
+完整格式请参考以下截图：  ![img](https://raw.githubusercontent.com/liangyimingcom/storage/master/PicGo/clip_image012.jpg) 
 
 
-
-
-
- 
 
 ### 练习 **11**[可放弃]
 
 在下面的代码中填写我们要跟踪的指标和值。您可以阅读有关 put_scaling_policy API 方法的更多信息，了解如何填写这些值。
-
-
 
 完整格式请参考以下截图：
 ![img](https://raw.githubusercontent.com/liangyimingcom/storage/master/PicGo/clip_image013.jpg) 
@@ -302,7 +294,13 @@ objective_metric_name='validation:error'
 
 ### 进阶学习：
 
-使用机器学习进行预测性设备维护(60 MIN) https://www.mfgee.ml/4.predictivemaintenance/
+1）使用XGBoost算法训练MNIST数据集 https://github.com/aws-samples/aws-sagemaker-build/blob/b53e5ce80e37f4067a0f2e5e14cfe98993f95095/templates/main/SageMakerNotebook/notebooks/amazon/linear_learner_mnist.ipynb
+
+2）使用滑窗将将时间序列转换为监督学习的说明：https://github.com/liangyimingcom/Use-SageMaker_XGBoost-convert-Time-Series-into-Supervised-Learning-for-predictive-maintenance
+
+3）DEMO代码，如何使用滑窗将将时间序列转换为监督学习 https://www.mfgee.ml/4.predictivemaintenance/
+
+![image-20220203184739948](https://raw.githubusercontent.com/liangyimingcom/storage/master/PicGo/image-20220203184739948.png)
 
 
 
@@ -316,9 +314,9 @@ objective_metric_name='validation:error'
 
 去Github - AWS Sample里面学习更多的demo：
 
-[aws-samples](https://github.com/aws-samples)/[amazon-forecast-samples](https://github.com/aws-samples/amazon-forecast-samples)
+- [aws-samples](https://github.com/aws-samples)/[amazon-forecast-samples](https://github.com/aws-samples/amazon-forecast-samples)
+- https://github.com/search?q=org%3Aaws-samples+xgboost
 
-https://github.com/search?q=org%3Aaws-samples+xgboost
 
 
 
@@ -328,9 +326,9 @@ https://github.com/search?q=org%3Aaws-samples+xgboost
 
 ## 四、CV 计算机视觉(Computer Vison)
 
-使用目前做流行的的YOLO来做CV的模型训练：
+### 一、使用目前做流行的的YOLO来做CV的模型训练：
 
-1、Yiming建议训练数据集使用免费的raboflow就可以：
+1、建议训练数据集使用免费的raboflow就可以：
 
 数据集：小浣熊，使用方法：
 
@@ -340,11 +338,13 @@ https://github.com/search?q=org%3Aaws-samples+xgboost
 
 ![image-20220203163448833](https://raw.githubusercontent.com/liangyimingcom/storage/master/PicGo/image-20220203163448833.png)
 
-
+![image-20220203165453028](https://raw.githubusercontent.com/liangyimingcom/storage/master/PicGo/image-20220203165453028.png)
 
 3）替换 Google Colab的地址如下：
 
 ![image-20220203163929920](https://raw.githubusercontent.com/liangyimingcom/storage/master/PicGo/image-20220203163929920.png)
+
+
 
 2 、模型训练是一个耗时很长的事情，你有可能会遇到程序爆炸、显存爆炸等各种白给的情况。它对机器的配置也有要求。一般来说 GPU 训练的速度会比 CPU 训练的速度要快一些，如果你的电脑配置不够，建议你可以白嫖 Google Colab。
 
@@ -352,10 +352,34 @@ Google Colaboratory 是 Google 提供的一个在线编辑执行环境。它是�
 最重要的是， Colab 可以提供免费的 GPU 服务器让你实验你的神经网络项目。
 
 首先，你需要有一个 Google 账号，然后打开下面这个链接：https://colab.research.google.com/drive/11LiUAPeFOlMwtp99aD8D9bOeVViuHDWu
+
 这是我之前测试用的一份笔记本，它是从 YOLOv5 官方提供的那份笔记本简化而来的。你可以把代码中读取训练集的部分换成自己的链接，其他地方应该不用修改太多。
 
 Colab 可以和你的 Google Drive 传输文件。你可以点击左边菜单的 装载 Google 云端硬盘。
 
+
+
 3、请根据它的提示来。
 
+
+
+### 二、CV的自动化工具，基于ML Bot的业务实现：
+
+1）入口：
+
+https://dtqe5431j3pac.cloudfront.net/#/
+
+
+
+2）MACHINE LEARNING BOT 教程
+
+http://ml-bot.s3-website.cn-north-1.amazonaws.com.cn/explore/
+
+
+
+3）自动化标注工具，名称：CVAT
+
+
+
+紧张的大年初三 :) happyend
 
