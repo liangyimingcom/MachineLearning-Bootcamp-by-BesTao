@@ -267,7 +267,7 @@ objective_metric_name='validation:error'
 
 完整格式请参考以下截图：
 
-![image-20220203152923923](../../../../yiming/Library/Application%20Support/typora-user-images/image-20220203152923923.png)
+![image-20220203160449284](https://raw.githubusercontent.com/liangyimingcom/storage/master/PicGo/image-20220203160449284.png)
 
  
 
@@ -300,19 +300,19 @@ objective_metric_name='validation:error'
 
 
 
-进阶学习：
+### 进阶学习：
+
+使用机器学习进行预测性设备维护(60 MIN) https://www.mfgee.ml/4.predictivemaintenance/
 
 
 
-
-
-引用：
+### 引用教程：
 
 [10分钟SageMaker系列- 使用 AWS Sagemaker XGBOOSTI 模型进行房价预测.mp4](./11XGBoost 经典机器学习分类与排序/10分钟SageMaker系列- 使用 AWS Sagemaker XGBOOSTI 模型进行房价预测.mp4)
 
 
 
-更多学习：
+### 更多学习：
 
 去Github - AWS Sample里面学习更多的demo：
 
@@ -326,8 +326,36 @@ https://github.com/search?q=org%3Aaws-samples+xgboost
 
 
 
-四、
+## 四、CV 计算机视觉(Computer Vison)
+
+使用目前做流行的的YOLO来做CV的模型训练：
+
+1、Yiming建议训练数据集使用免费的raboflow就可以：
+
+数据集：小浣熊，使用方法：
+
+1）打开 https://public.roboflow.ai/object-detection/raccoon，选择Raccoon > raw
+
+2）确认地址为：https://public.roboflow.com/ds/BRNFIik1yF?key=9Qi2o52H1W
+
+![image-20220203163448833](https://raw.githubusercontent.com/liangyimingcom/storage/master/PicGo/image-20220203163448833.png)
 
 
 
-MachineLearning入门学习课程
+3）替换 Google Colab的地址如下：
+
+![image-20220203163929920](https://raw.githubusercontent.com/liangyimingcom/storage/master/PicGo/image-20220203163929920.png)
+
+2 、模型训练是一个耗时很长的事情，你有可能会遇到程序爆炸、显存爆炸等各种白给的情况。它对机器的配置也有要求。一般来说 GPU 训练的速度会比 CPU 训练的速度要快一些，如果你的电脑配置不够，建议你可以白嫖 Google Colab。
+
+Google Colaboratory 是 Google 提供的一个在线编辑执行环境。它是一个运行着 Jupyter Notebook 的虚拟机。它可以让你在网页里写代码，然后点击就可以运行。运行结果和代码、说明等都会以 .ipynb 格式的文件保存，叫笔记本。别人打开的时候可以直接看见你的运行结果。
+最重要的是， Colab 可以提供免费的 GPU 服务器让你实验你的神经网络项目。
+
+首先，你需要有一个 Google 账号，然后打开下面这个链接：https://colab.research.google.com/drive/11LiUAPeFOlMwtp99aD8D9bOeVViuHDWu
+这是我之前测试用的一份笔记本，它是从 YOLOv5 官方提供的那份笔记本简化而来的。你可以把代码中读取训练集的部分换成自己的链接，其他地方应该不用修改太多。
+
+Colab 可以和你的 Google Drive 传输文件。你可以点击左边菜单的 装载 Google 云端硬盘。
+
+3、请根据它的提示来。
+
+
